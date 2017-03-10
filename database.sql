@@ -12,3 +12,4 @@ CREATE  TABLE `dkn`.`Users` (
   PRIMARY KEY (`username`) )
 COMMENT = 'Customer and Admin User Table';
 
+
