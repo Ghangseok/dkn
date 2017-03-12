@@ -71,3 +71,4 @@ INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `provin
 INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `is_main`, `is_open`) VALUES ('Etobicoke', '647-456-7890', 'etobicoke@dkn.com', '456 Yonge St.', 'Toronto', 'Ontario', 'M2N9T1', 'N', 'Y');
 INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `is_main`, `is_open`) VALUES ('Quebec City', '123-789-4568', 'quecbeccity@dkn.com', '456 Rue DeMont', 'Quebec City', 'Quebec', 'Q9S5B8', 'N', 'Y');
 
+
