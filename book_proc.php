@@ -53,6 +53,6 @@
         //header("Location:503.html");
     }
 
-   // header("Location:service.php");
+    header("Location:service.php");
 
 ?>
