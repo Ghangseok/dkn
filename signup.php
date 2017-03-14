@@ -13,8 +13,8 @@
                     <hr>
                     <div class="row">
                         <div class="form-group col-lg-4">
-                            <label>Userame</label>
-                            <input type="text" class="form-control">
+                            <label>Username</label>
+                            <input type="text" name="Username" class="form-control">
                         </div>
                         <div class="form-group col-lg-4">
                             <label>Password</label>
