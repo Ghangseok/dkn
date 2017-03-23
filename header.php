@@ -29,16 +29,20 @@
     <![endif]-->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
+	<script src="js/jquery.validation.js"></script>
+	<script src="js/validation.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 </head>
-
+<?php
+	require "session.php";
+?>
 <body>
     <table border="0" align="right">
         <tr><td width="*"> </td>
-            <td width="60"><a href="login.php" class="btn-sm btn-success" role="button">Log In</a></td>
+			<?php 
+			echo (isset($_SESSION['login_user'])?'<td width="60"><a href="logout.php" class="btn-sm btn-success" role="button">Logout</a></td>':'<td width="60"><a href="login.php" class="btn-sm btn-success" role="button">Log In</a></td>');?>
             <td width="65"><a href="signup.php" class="btn-sm btn-warning" role="button">Sign Up</a></td>
             <td width="10"> </td>
         </tr>
@@ -83,3 +87,6 @@
         </div>
         <!-- /.container -->
     </nav>
+<?php
+	require "mysql_connection.php";
+?>
