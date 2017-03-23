@@ -3,7 +3,7 @@
 ?>
 
     <div class="container">
-        <form action="" method="POST">
+        <form action="manage_branch_proc.php" method="POST">
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -14,27 +14,27 @@
                     <div class="row">
                         <div class="form-group col-lg-4">
                             <label>Branch Name</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="branch_name" class="form-control">
                         </div>
                         <div class="form-group col-lg-4">
                             <label>Contact Number</label>
-                            <input type="tel" class="form-control" value="">
+                            <input type="tel" name="tel" class="form-control" value="">
                         </div>
                         <div class="form-group col-lg-4">
                             <label>Email Address</label>
-                            <input type="email" class="form-control" value="">
+                            <input type="email" name="email" class="form-control" value="">
                         </div>
                         <div class="form-group col-lg-4">
                             <label>Address</label>
-                            <input type="text" class="form-control" value="">
+                            <input type="text" name="address" class="form-control" value="">
                         </div>
                         <div class="form-group col-lg-2">
                             <label>City</label>
-                            <input type="text" class="form-control" value="">
+                            <input type="text" name="city" class="form-control" value="">
                         </div>
                         <div class="form-group col-lg-2">
                             <label for="province">Province</label>
-                            <select class="form-control" id="province">
+                            <select class="form-control" name="province" id="province">
                                 <option>Ontario</option>
                                 <option>Quebec</option>
                                 <option>British Columbia</option>
@@ -43,11 +43,11 @@
                         </div>
                         <div class="form-group col-lg-2">
                             <label>Postal Code</label>
-                            <input type="text" class="form-control" value="M2N 3G8">
+                            <input type="text" name="postal" class="form-control" value="">
                         </div>
                         <div class="form-group col-lg-4">
                             <label>Map</label>
-                            <input type="text" class="form-control" value="">
+                            <input type="text" name="map" class="form-control" value="">
                         </div>                       
                     </div>
                     <div class="clearfix"></div>

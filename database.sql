@@ -63,12 +63,13 @@ CREATE  TABLE `DKN`.`Branches` (
   `city` VARCHAR(50) NOT NULL ,
   `province` VARCHAR(50) NOT NULL ,
   `postal` VARCHAR(6) NOT NULL ,
+  `map` VARCHAR(1000) NOT NULL ,
   `is_main` VARCHAR(1) NOT NULL ,
   `is_open` VARCHAR(1) NOT NULL ,
   PRIMARY KEY (`branch_id`) );
 
-INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `is_main`, `is_open`) VALUES ('Main', '647-123-4567', 'main@dkn.com', '123 Yonge St.', 'Toronto', 'Ontario', 'M2N1G9', 'Y', 'Y');
-INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `is_main`, `is_open`) VALUES ('Etobicoke', '647-456-7890', 'etobicoke@dkn.com', '456 Yonge St.', 'Toronto', 'Ontario', 'M2N9T1', 'N', 'Y');
-INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `is_main`, `is_open`) VALUES ('Quebec City', '123-789-4568', 'quecbeccity@dkn.com', '456 Rue DeMont', 'Quebec City', 'Quebec', 'Q9S5B8', 'N', 'Y');
+INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `map`, `is_main`, `is_open`) VALUES ('Main', '647-123-4567', 'main@dkn.com', '123 Yonge St.', 'Toronto', 'Ontario', 'M2N1G9', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8149.692361582063!2d-79.41654482981137!3d43.76556463223513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48da4ef5a518aea9!2sCineplex+Cinemas+Empress+Walk!5e0!3m2!1sen!2sca!4v1489119752728', 'Y', 'Y');
+INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `map`, `is_main`, `is_open`) VALUES ('Etobicoke', '647-456-7890', 'etobicoke@dkn.com', '456 Yonge St.', 'Toronto', 'Ontario', 'M2N9T1', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8149.692361582063!2d-79.41654482981137!3d43.76556463223513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48da4ef5a518aea9!2sCineplex+Cinemas+Empress+Walk!5e0!3m2!1sen!2sca!4v1489119752728', 'N', 'Y');
+INSERT INTO `dkn`.`branches` (`name`, `tel`, `email`, `address`, `city`, `province`, `postal`, `map`, `is_main`, `is_open`) VALUES ('Quebec City', '123-789-4568', 'quecbeccity@dkn.com', '456 Rue DeMont', 'Quebec City', 'Quebec', 'Q9S5B8', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8149.692361582063!2d-79.41654482981137!3d43.76556463223513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48da4ef5a518aea9!2sCineplex+Cinemas+Empress+Walk!5e0!3m2!1sen!2sca!4v1489119752728', 'N', 'Y');
 
 
