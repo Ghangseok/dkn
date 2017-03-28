@@ -25,12 +25,15 @@
 				
 				if ($rows == 1 && $total['username'] === $_POST['username'] && $total['password']===$_POST['password']) {
 					$_SESSION['login_user'] = $username; // Initializing Session
+					$_SESSION['login_name'] = $total['name'];
 					header("location: index.php"); // Redirecting To Other Page
 				} else if($rows == 1 && $total['username'] != $_POST['username'] && $total['password']===$_POST['password']){
 					$error = "Username is invalid";
 				}
 				else if($rows == 1 && $total['username'] === $_POST['username'] && $total['password']!=$_POST['password']){
 					$error = "Password is invalid";
+				} else {
+					$error = "Sorry, You are blocked by admin!";
 				}
 				//mysql_close($con); // Closing Connection
 			}
@@ -43,7 +46,7 @@
                     <hr>
                     <h2 class="intro-text text-center">Account <strong>form</strong></h2>
                     <hr>
-                    <form role="form" method="post">
+                    <form action=""role="form" method="post">
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Userame</label>
