@@ -46,7 +46,7 @@
                     <hr>
                     <h2 class="intro-text text-center">Account <strong>form</strong></h2>
                     <hr>
-                    <form action=""role="form" method="post">
+                    <form action="login_proc.php" role="form" method="post">
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Userame</label>
