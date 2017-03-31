@@ -1,5 +1,4 @@
 <?php
-    session_start();
     require "header.php";
 
 
@@ -57,7 +56,6 @@
                                       ON A.username = U.username
                                   INNER JOIN Branches B
                                       ON A.branch_id = B.branch_id
-                                  WHERE is_scheduled = :is_scheduled
                                   ORDER BY A.date, A.time"
                                );
         $stmt->bindParam(':is_scheduled', $is_scheduled);
